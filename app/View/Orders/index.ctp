@@ -1,6 +1,9 @@
 <!-- File: /app/View/Orders/index.ctp -->
 
 <h1>Orders</h1>
+
+<?php echo $this->Html->link('Add Order', array('controller' => 'orders', 'action' => 'add')); ?>
+
 <table>
     <tr>
         <th>Id</th>
