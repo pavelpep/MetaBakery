@@ -22,7 +22,17 @@
             <?php echo $order['Order']['customerName']; ?>
         </td>
         <td>
-            <?php echo $order['Order']['cakeType']; ?>
+            <?php 
+                switch ( $order['Order']['cakeType'] ){
+                    case 1: echo "Chocolate Cake"; 
+                        break;
+                    case 2: echo "Vanilla Cake";
+                        break;
+                    case 3: echo "Lemon Cake";
+                        break;
+
+                }
+                ?>
         </td>
         <td>
             <?php echo $order['Order']['requestCreated']; ?>
