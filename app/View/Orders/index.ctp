@@ -11,6 +11,7 @@
         <th>Cake</th>
         <th>Request Made</th>
         <th>Request Due</th>
+        <th>Delete Order</th>
 
     </tr>
 
@@ -42,6 +43,9 @@
         </td>
         <td>
             <?php echo $order['Order']['requestDue']; ?>
+        </td>
+        <td>
+            <?php echo $this->Html->link('delete', array('action'=>'delete', $order['Order']['id']), NULL , "Are you sure you want to remove this order"); ?>
         </td>
     </tr>
     <?php endforeach; ?>

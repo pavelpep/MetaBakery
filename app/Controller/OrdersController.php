@@ -17,6 +17,11 @@ class OrdersController extends AppController {
         $this->set('order', $this->Order->read());
     }
     
+    public function delete($id = null ) {
+        $this->Order->delete($id);
+        $this->Session->setFlash('The order has been deleted');
+        $this->redirect(array('action'=>'index'));
+    }
     public function add() {
     	if ($this->request->is('post')) {
     		$this->Order->create();
