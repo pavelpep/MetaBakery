@@ -3,7 +3,9 @@
 <h1>Add Order</h1>
 <?php
 echo $this->Form->create('Order');
-echo $this->Form->input('title');
-echo $this->Form->input('body', array('rows' => '3'));
+echo $this->Form->input('customerName');
+echo $this->Form->input('cakeType');
+echo $this->Form->input('requestCreated');
+echo $this->Form->input('requestDue');
 echo $this->Form->end('Save Order');
 ?>
