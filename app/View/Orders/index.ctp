@@ -2,15 +2,13 @@
 
 <h1>Orders</h1>
 
-<?php echo $this->Html->link('Add Order', array('controller' => 'orders', 'action' => 'add')); ?>
+
 
 <table>
     <tr>
-        <th>Order ID</th>
         <th>Customer</th>
         <th>Cake</th>
-        <th>Request Made</th>
-        <th>Request Due</th>
+        <th>View Order Details</th>
         <th>Delete Order</th>
 
     </tr>
@@ -19,9 +17,6 @@
 
     <?php foreach ($orders as $order): ?>
     <tr>
-        <td>
-            <?php echo $order['Order']['id']; ?>
-        </td>
         <td>
             <?php echo $order['Order']['customerName']; ?>
         </td>
@@ -39,10 +34,7 @@
                 ?>
         </td>
         <td>
-            <?php echo $order['Order']['requestCreated']; ?>
-        </td>
-        <td>
-            <?php echo $order['Order']['requestDue']; ?>
+            <?php echo $this->Html->link('view', array('action'=>'view', $order['Order']['id'])); ?>
         </td>
         <td>
             <?php echo $this->Html->link('delete', array('action'=>'delete', $order['Order']['id']), NULL , "Are you sure you want to remove this order"); ?>
@@ -51,3 +43,7 @@
     <?php endforeach; ?>
     <?php unset($order); ?>
 </table>
+
+<br />
+
+<?php echo $this->Html->link('Add Order', array('controller' => 'orders', 'action' => 'add')); ?>

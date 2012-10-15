@@ -1,7 +1,13 @@
 <!-- File: /app/View/Orders/view.ctp -->
 
-<h1><?php echo h($order['Order']['title']); ?></h1>
+<p>Customer: <?php echo $order['Order']['customerName']; ?></p>
 
-<p><small>Created: <?php echo $order['Order']['created']; ?></small></p>
+<p>Cake Type: <?php echo $order['Order']['cakeType']; ?></p>
 
-<p><?php echo h($order['Order']['body']); ?></p>
+<p>Request Made: <?php echo $order['Order']['requestCreated']; ?></p>
+
+<p>Required by: <?php echo $order['Order']['requestDue']; ?></p>
+
+<p>Order ID: <?php echo $order['Order']['id']; ?></p>
+
+<?php echo $this->Html->link('Back', array('controller' => 'orders', 'action' => 'index')); ?>
