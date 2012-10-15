@@ -3,12 +3,15 @@
 class Order extends AppModel {
 	
 	public $validate = array(
-			'title' => array(
-					'rule' => 'notEmpty'
+			'customerName' => array(
+					'rule' => 'notEmpty',
+					'message'=> 'Please enter the customers name'
 			),
-			'body' => array(
-					'rule' => 'notEmpty'
+			'cakeType' => array(
+					'rule' => 'notEmpty',
+					'message'=> 'Please select a cake'
 			)
+
 	);
 }
 
