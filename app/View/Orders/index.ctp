@@ -45,5 +45,7 @@
 </table>
 
 <br />
-
 <?php echo $this->Html->link('Add Order', array('controller' => 'orders', 'action' => 'add')); ?>
+<br />
+<br />
+<?php echo $this->Html->link('Technical Comparisons', array('controller' => 'orders', 'action' => 'tech_comparisons')); ?>
