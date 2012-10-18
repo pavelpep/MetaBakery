@@ -1,0 +1,19 @@
+
+#flashMessage {
+	background-color: darkblue;
+	color: white;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.form-error {
+	border: 1px solid darkblue;
+}
+
+.error-message{
+	background-color: darkblue;
+	color: white;
+	border: 1 px solid black;
+	margin-bottom: 10px;
+	width: 100%;
+}
