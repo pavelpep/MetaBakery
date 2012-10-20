@@ -25,6 +25,7 @@ class OrdersController extends AppController {
         $this->Session->setFlash('The order has been deleted');
         $this->redirect(array('action'=>'index'));
     }
+    
     public function add() {
         $this->set('title_for_layout', 'Add Order');
     	if ($this->request->is('post')) {
@@ -37,4 +38,18 @@ class OrdersController extends AppController {
     		}
     	}
     }
+    
+	public function edit($id = null) {
+	    $this->Order->id = $id;
+	    if ($this->request->is('get')) {
+	        $this->request->data = $this->Order->read();
+	    } else {
+	        if ($this->Order->save($this->request->data)) {
+	            $this->Session->setFlash('Your order has been updated.');
+	            $this->redirect(array('action' => 'index'));
+	        } else {
+	            $this->Session->setFlash('Unable to update your order.');
+	        }
+	    }
+	}
 }

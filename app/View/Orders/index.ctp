@@ -9,6 +9,7 @@
         <th>Customer</th>
         <th>Cake</th>
         <th>View Order Details</th>
+        <th>Edit Order</th>
         <th>Delete Order</th>
 
     </tr>
@@ -35,6 +36,9 @@
         </td>
         <td>
             <?php echo $this->Html->link('view', array('action'=>'view', $order['Order']['id'])); ?>
+        </td>
+        <td>
+            <?php echo $this->Html->link('edit', array('action'=>'edit', $order['Order']['id'])); ?>
         </td>
         <td>
             <?php echo $this->Html->link('delete', array('action'=>'delete', $order['Order']['id']), NULL , "Are you sure you want to remove this order"); ?>
