@@ -5,6 +5,8 @@
 		<?php echo $this->Html->css('app'); ?>
 		<?php echo $this->Html->css('foundation.min'); ?>
 		<?php echo $this->Html->css('metabakery'); ?>
+		<?php echo $this->Html->script('jquery'); ?>
+		<?php echo $this->Html->script('techcomparison'); ?>
 
 	</head>
 	<body>

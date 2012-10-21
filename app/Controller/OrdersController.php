@@ -38,6 +38,10 @@ class OrdersController extends AppController {
     		}
     	}
     }
+
+    public function tech_comparisons(){
+        $this->set('title_for_layout', 'Tech Comparisons');
+    }
     
 	public function edit($id = null) {
 	    $this->Order->id = $id;
