@@ -8,7 +8,7 @@
 <br />
 <br />
 <div id="orderDisplay">
-<table>
+<table id="ordersTable">
     <tr>
         <th>Customer</th>
         <th>Cake</th>

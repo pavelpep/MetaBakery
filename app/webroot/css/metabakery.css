@@ -19,12 +19,15 @@
 }
 
 #orderDisplay{
-    width: 500px;
-	background: #fff;
-	clear: both;
+    
+	background: #ccf;
 	color: #333;
-	padding: 10px 20px 40px 20px;
+	padding: 10px 10px 0px 10px;
 	overflow: auto;
+}
+
+#ordersTable{
+width: 100%;
 }
 
 body
