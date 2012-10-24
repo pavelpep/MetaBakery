@@ -8,6 +8,7 @@
 <br />
 <br />
 <br />
+<div id="orderDisplay">
 <table>
     <tr>
         <th>Customer</th>
@@ -51,7 +52,7 @@
     <?php endforeach; ?>
     <?php unset($order); ?>
 </table>
-
+</div>
 
 <br />
 <br />
