@@ -33,16 +33,28 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 	
-    //  public $components = array(
-    //     'Session',
-    //     'Auth' => array(
-    //         'loginRedirect' => array('controller' => 'orders', 'action' => 'index'),
-    //         'logoutRedirect' => array('controller' => 'users', 'action' => 'index')
-    //     )
-    // );
+     public $components = array(
+        'Session',
+        'Acl',
+        'Auth' => array(
+            'loginRedirect' => array('controller' => 'orders', 'action' => 'index'),
+            'logoutRedirect' => array('controller' => 'users', 'action' => 'index'),
+            'authorize' => array('Controller')
+        )
+    );
 
-    // public function beforeFilter() {
-    //     $this->Auth->allow('index', 'view');
-    // }
+    public function beforeFilter() {
+        $this->Auth->allow('index', 'view');
+    }
+
+    public function isAuthorized($user) {
+    // Admin can access every action
+    if (isset($user['role']) && $user['role'] === 'admin') {
+        return true;
+    }
+
+    // Default deny
+    return false;
+}
 
 }

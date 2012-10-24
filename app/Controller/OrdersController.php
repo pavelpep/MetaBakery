@@ -29,6 +29,7 @@ class OrdersController extends AppController {
     public function add() {
         $this->set('title_for_layout', 'Add Order');
     	if ($this->request->is('post')) {
+            $this->request->data['Order']['user_id'] = $this->Auth->user('id');
     		$this->Order->create();
     		if ($this->Order->save($this->request->data)) {
     			$this->Session->setFlash('Your order has been saved.');
@@ -56,4 +57,25 @@ class OrdersController extends AppController {
 	        }
 	    }
 	}
+
+    public function isAuthorized($user) {
+    // All registered users can add posts
+    if ($this->action === 'add') {
+        return true;
+    }
+
+    if ($this->action === 'tech_comparisons') {
+        return true;
+    }
+
+    // The owner of a order can edit and delete it
+    if (in_array($this->action, array('edit', 'delete'))) {
+        $orderId = $this->request->params['pass'][0];
+        if ($this->Order->isOwnedBy($orderId, $user['id'])) {
+            return true;
+        }
+    }
+
+    return parent::isAuthorized($user);
+}
 }
