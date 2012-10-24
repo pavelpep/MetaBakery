@@ -26,7 +26,7 @@
 				
 					else:
 						echo $this->Html->Link('Log In', array('controller' => 'users', 'action' => 'login'), array('class' => 'button'));
-						
+						echo $this->Html->Link('Register', array('controller' => 'users', 'action' => 'add'), array('class' => 'button'));
 					endif;
 				?>
 			</div>
