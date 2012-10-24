@@ -17,8 +17,6 @@
 		
 		<div id="container">
 		     
-			<?php echo $this->Html->Link('Orders List', array('controller' => 'orders', 'action' => 'index'), array('class' => 'button', 'target' => '_blank')); ?>
-			<?php echo $this->Html->Link('Add Order', array('controller' => 'orders', 'action' => 'add'), array('class' => 'button', 'target' => '_blank'));	?>
 			
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $content_for_layout; ?>
