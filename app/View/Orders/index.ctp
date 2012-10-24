@@ -1,9 +1,13 @@
 <!-- File: /app/View/Orders/index.ctp -->
 
-<h1>Orders</h1>
+<h1> Welcome to MetaBakery</h1>
 
 
-
+<br />
+<?php echo $this->Html->link('Add Order', array('controller' => 'orders', 'action' => 'add')); ?>
+<br />
+<br />
+<br />
 <table>
     <tr>
         <th>Customer</th>
@@ -48,8 +52,7 @@
     <?php unset($order); ?>
 </table>
 
-<br />
-<?php echo $this->Html->link('Add Order', array('controller' => 'orders', 'action' => 'add')); ?>
+
 <br />
 <br />
 <?php echo $this->Html->link('Technical Comparisons', array('controller' => 'orders', 'action' => 'tech_comparisons')); ?>

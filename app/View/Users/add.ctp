@@ -12,4 +12,6 @@
     ?>
     </fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
+
+<?php echo $this->Html->link('Back', array('controller' => 'users', 'action' => 'index')); ?>
 </div>

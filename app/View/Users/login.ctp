@@ -9,4 +9,6 @@
     ?>
     </fieldset>
 <?php echo $this->Form->end(__('Login')); ?>
+
+<?php echo $this->Html->link('Back', array('controller' => 'users', 'action' => 'index')); ?>
 </div>

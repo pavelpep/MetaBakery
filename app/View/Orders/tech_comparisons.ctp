@@ -4,7 +4,7 @@
 	<h1>
 		Lift
    	</h1>
-   	<h6 class='reveal_text'>Please click to reveal comparison </h6>
+   	<h6 class='reveal_text'>Please double-click to reveal comparison </h6>
 	<div class='tech_comparison'>
 		<p>
 		Lift is an alternative web framework to CakePHP utilizing the scala language over PHP.  There are many benefits to using Scala over most web application frameworks due to Scala language. Scala was built for scalability in mind and is regarded by some as the next evolution of Java.  This scalability is proven through its use of thread safety and concurrency controls allowing Scala to fundamentally have a place in the web application domain. By borrowing characteristics from functional and object oriented programming it is able to scale better on multi core servers while still providing the code available through Java.
@@ -22,7 +22,7 @@
 	<h1>
 		Zend Framework
    	</h1>
-   	<h6 class='reveal_text'>Please click to reveal comparison </h6>
+   	<h6 class='reveal_text'>Please double-click to reveal comparison </h6>
 	<div class='tech_comparison'>
 		<p>
 Zend Framework is an open source framework for developing web applications in PHP.  It is licensed by Open Source Initiative (OSI)-approved New BSD License.  Furthermore, the main sponsor of Zend Framework is Zend Technologies.  Companies like Google, Microsoft, IBM, StrikeIron, and Adobe Systems are also sponsors for developing the framework.  It started on March 2006.</p>
@@ -41,7 +41,7 @@ Using CakePHP, a web application can be built quickly because of the code genera
 	<h1>
 		Struts
    	</h1>
-   	<h6 class='reveal_text'>Please click to reveal comparison </h6>
+   	<h6 class='reveal_text'>Please double-click to reveal comparison </h6>
 	<div class='tech_comparison'>
 		
 <p>
@@ -58,7 +58,7 @@ Using CakePHP, a web application can be built quickly because of the code genera
 	<h1>
 		Code Igniter
    	</h1>
-   	<h6 class='reveal_text'>Please click to reveal comparison </h6>
+   	<h6 class='reveal_text'>Please double-click to reveal comparison </h6>
 	<div class='tech_comparison'>
 
 <p>

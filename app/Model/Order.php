@@ -14,5 +14,8 @@ class Order extends AppModel {
 			)
 
 	);
+	public function isOwnedBy($order, $user) {
+        return $this->field('id', array('id' => $order, 'user_id' => $user)) === $order;
+    }
 }
 
