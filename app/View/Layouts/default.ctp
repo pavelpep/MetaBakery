@@ -15,16 +15,16 @@
 		    <h1>Meta Bakery</h1>
 			
 			<div id="headerBar">
-				<?php echo $this->Html->Link('Orders List', array('controller' => 'orders', 'action' => 'index'), array('class' => 'button', 'target' => '_blank')); ?>
-				<?php echo $this->Html->Link('Add Order', array('controller' => 'orders', 'action' => 'add'), array('class' => 'button', 'target' => '_blank'));	?>
-			
+				<?php echo $this->Html->Link('Orders List', array('controller' => 'orders', 'action' => 'index'), array('class' => 'button')); ?>
+				<?php echo $this->Html->Link('Add Order', array('controller' => 'orders', 'action' => 'add'), array('class' => 'button'));	?>
+			    <?php echo $this->Html->link('Technical Comparisons', array('controller' => 'orders', 'action' => 'tech_comparisons'), array('class' => 'button')); ?>
 			
 				<?php
 					if ($this->Session->read('Auth.User')):						
-						echo $this->Html->Link('Log Out', array('controller' => 'users', 'action' => 'logout'), array('class' => 'button', 'target' => '_blank'));
+						echo $this->Html->Link('Log Out', array('controller' => 'users', 'action' => 'logout'), array('class' => 'button'));
 				
 					else:
-						echo $this->Html->Link('Log In', array('controller' => 'users', 'action' => 'login'), array('class' => 'button', 'target' => '_blank'));
+						echo $this->Html->Link('Log In', array('controller' => 'users', 'action' => 'login'), array('class' => 'button'));
 						
 					endif;
 				?>

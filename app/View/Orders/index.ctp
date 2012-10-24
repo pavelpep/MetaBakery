@@ -1,10 +1,9 @@
 <!-- File: /app/View/Orders/index.ctp -->
 
-<h1> Welcome to MetaBakery</h1>
+<h1> Cake Orders</h1>
 
 
 <br />
-<?php echo $this->Html->link('Add Order', array('controller' => 'orders', 'action' => 'add')); ?>
 <br />
 <br />
 <br />
@@ -56,4 +55,4 @@
 
 <br />
 <br />
-<?php echo $this->Html->link('Technical Comparisons', array('controller' => 'orders', 'action' => 'tech_comparisons')); ?>
+
