@@ -17,3 +17,43 @@
 	margin-bottom: 10px;
 	width: 100%;
 }
+
+
+body
+{
+background-color: skyblue;
+}
+#header
+{
+ text-align: center;
+ background-color: white;
+ color: black;
+ -webkit-border-radius: 7px;
+}
+#container
+{
+ 
+ background-color: white;
+ color: black;
+ -webkit-border-radius: 7px;
+ 
+ position: relative;
+ top: 20px;
+ right: 0px;
+ left: 0px;
+ bottom: 0px;
+ 	 list-style: none;
+ 	 float: center;
+ 	 display: block;
+ 	 margin-left: 150px;
+ 	 margin-right: 150px;
+ 	 padding-right: 50px;
+ 	 padding-left: 50px;
+}
+#footer
+{
+ text-align: center;
+ 
+ color: white;
+ 
+}
