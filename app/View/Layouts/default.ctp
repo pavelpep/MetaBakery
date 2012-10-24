@@ -12,10 +12,14 @@
 	<body>
 		
 		<div id="header">
-			<h1>Cake Orders</h1>
+			<h1>Meta Bakery</h1>
 		</div>
 		
 		<div id="container">
+		     
+			<?php echo $this->Html->Link('Orders List', array('controller' => 'orders', 'action' => 'index'), array('class' => 'button', 'target' => '_blank')); ?>
+			<?php echo $this->Html->Link('Add Order', array('controller' => 'orders', 'action' => 'add'), array('class' => 'button', 'target' => '_blank'));	?>
+			
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $content_for_layout; ?>
 		</div>
