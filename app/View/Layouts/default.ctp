@@ -18,6 +18,7 @@
 				<?php echo $this->Html->Link('Orders List', array('controller' => 'orders', 'action' => 'index'), array('class' => 'button')); ?>
 				<?php echo $this->Html->Link('Add Order', array('controller' => 'orders', 'action' => 'add'), array('class' => 'button'));	?>
 			    <?php echo $this->Html->link('Technical Comparisons', array('controller' => 'orders', 'action' => 'tech_comparisons'), array('class' => 'button')); ?>
+			    <?php echo $this->Html->link('Bakery Post', array('controller' => 'posts', 'action' => 'bakery'), array('class' => 'button')); ?>
 			
 				<?php
 					if ($this->Session->read('Auth.User')):						
@@ -42,4 +43,4 @@
 		
 	</body>
 	
-</html>
+</html
